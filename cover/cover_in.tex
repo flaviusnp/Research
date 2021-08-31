@@ -1,0 +1,60 @@
+\pagenumbering{gobble}
+\thispagestyle{empty}
+
+\pagenumbering{gobble}
+\maketitle
+\vspace{0.5cm}
+\hrule
+\vspace{1cm}
+
+\begin{center}
+    \textbf{Students :}
+    \vspace{0.25cm}
+    
+    \begin{tabular}{lll}
+        \students
+    \end{tabular}
+\end{center}
+\vspace{0.5cm}
+
+\begin{center}
+    \textbf{Tutors :}
+    \vspace{0.25cm}
+    
+    \begin{tabular}{lll}
+        \tutors
+    \end{tabular}
+\end{center}\vspace{0.2cm}
+
+\begin{center}
+    \textbf{Keywords:}
+    \varkeywords
+\end{center}
+\vspace{0.5cm}
+
+% \begin{center}
+%     \Large{\textbf{Abstract :}}
+% \end{center}
+% \input{content/abstract}
+
+\newpage
+\pagestyle{fancy}
+\lhead{}
+\chead{}
+\rhead{}
+\lfoot{\projecttitle}
+\cfoot{}
+\rfoot{}
+\doublespacing
+\tableofcontents
+\singlespacing
+\newpage
+
+\pagenumbering{arabic}
+\pagestyle{fancy}
+\lhead{}
+\chead{}
+\rhead{}
+\lfoot{\projecttitle}
+\cfoot{}
+\rfoot{\thepage}

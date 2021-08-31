@@ -1,0 +1,48 @@
+\section{Summaries and Results}
+
+1. In this paper it is explored the use of wireless sensor network technology in real-time forest fire detection. The paper proposes a new real-time forest fire detection method by using wireless sensor networks. The goal is to detect and predict forest fires promptly and accurately in order to minimize the loss of forests, wild animals, and people in the forest fire. In this paradigm, a large number of sensor nodes are densely deployed in a forest which collect measured data such as temperature or relative humidity and process it by constructing a neural network.
+\smallskip
+
+The simulation results show that the in-network processing approach is efficient to reduce communications between sensor nodes. It is belived that the neural network based in-network processing approach can be applied to other monitoring and detecting sensor networks.
+\smallskip
+
+2. In this paper it was designed and implemented a distributed query engine for WSN, called Corona, which runs on the Sun SPOT platform. This platform is unique in that it runs a Java VM as operating system “on the bare metal”. The following facilities are achivied in this paper:
+
+\begin{itemize}
+    \item using the declarative query interface of Corona, several users can share a WSN consisting of several Sun SPOT nodes
+    \item Corona can adapt internal data processing functionalities
+    \item to the available resources such as free memory or battery level
+    \item The multi-query capabilities of Corona allow to cluster sensor readings into local storage buffers on each node, which are less-frequently retrieved by de-coupled selection queries, significantly reducing communication efforts
+    \item Finally, Corona allows to specify a freshness constraint for queries in order to facilitate sharing of sensor readings between queries. This new freshness parameter works with arbitrary concurrent queries and helps to minimize sensor activations in the network
+\end{itemize}
+\smallskip
+
+In order to maximize the network lifetime, Corona provides a resource monitoring component through which the query engine can dynamically adapt its processing to changing resource levels. The authors have further applied the idea of caching to shared wireless sensor networks in order to minimise sensor activations. Corona’s query language allows users to choose how outdated sensor readings are allowed to be before requiring a separate sensor activation for a query
+\smallskip
+3. Collaborative in-network processing is a viable solution to provide the required processing power not availablein standalone sensor nodes. Collaborative in-network processing partitions applications into smaller tasks executed in parallel on different sensor nodes. Dependencies between tasks are maintained through the exchange of intermediate results between sensor nodes. Hence, collaborative in-network processing methods are inherently cross-layer solutions that involve coordination of computation as well as communication events. Though local communication overhead is introduced during in-network processing, the resulting volume is significantly smaller than the raw data. Thus, the communication load and energy consumption are reduced for long distance communication over multiple hops.
+\smallskip
+
+The authors consider applications executed in multihop clusters of a WSN with delay constraints. The design objective of MTMS is to map and schedule the tasks of an application with the minimum energy consumption subject to delay constraints.
+\smallskip
+
+4. It is the aim of this survey to consider WSNs in which messages should be transferred in a confidential way. More precisely, adversaries that eavesdrop communication between the sensors, aggregators, and the sink shall not obtain the exchanged information. This is achieved by encrypting transmitted data. Other security goals, such as integrity, are outside the scope. We assume that adversaries can at least carry out ciphertext-only attacks. However, we will also analyze available solutions according to their protection against more powerful attacks. In principle, there are several possibilities in order to achieve the above security goal. If end-to-end encryption is desired, then applying usual encryption algorithms implies that intermediate nodes have no possibility for efficient aggregation allowing to shrink the size of messages to be forwarded. The application of usual encryption algorithms combined with the requirement of efficient data aggregation provides only the possibility of encrypting the messages hop-by-hop. However, this means that an aggregator has to decrypt each received message, then aggregate the messages according to the corresponding aggregation function and, finally, encrypt the aggregation result before forwarding it. Furthermore, hop-by-hop encryption possesses that intermediate aggregators require keys for decryption and encryption.
+\smallskip
+
+5. In this article the authors survey the current research related to security of in-network data processing in wireless sensor networks and highlight the directions, which are most promising in their opinion. They are presented the following aspects:
+
+\begin{itemize}
+    \item rationales behind in-network data processing in WSN
+    \item a description of the main trust challenges in WSN
+    \item an introduction of various security mechanisms, which can be used to address these challenges 
+    \item a discussion of the in-network data processing and data aggregation
+\end{itemize}
+\smallskip
+
+Very promising results have been recently achieved in this area based on advanced cryptographic concepts, such as privacy homomorphisms, bilinear pairings, and elliptic curve cryptography. Another important issue is related to assessment of trustworthiness and reliability of the data provided by WSNs, especially when this data is preprocessed in the network and received by the application in an aggregated form. Several different approaches have been proposed to this problem, e.g. based on subjective logic.
+\smallskip
+
+6. Sensor nodes sense environmental changes of their surrounding locations and send data to the sink over flexible network architectures. Due to the energy constraint, each sensor node only collects discrete data in order to save sensing and transmission energy, thus most of the query processing algorithms in WSNs focus on snapshot based queries. However, users may be interested in the overall trend of the environmental changes. For example, in the application of water quality monitoring, the users may not be satisfied with discrete sensed values collected at some specific time points. They also concern about the variation history of the water quality over a period of time. To show the continuous changes of the monitored environment and answer various users’ queries, a novel query form, curve query, becomes indispensable for WSNs.
+\smallskip
+
+This paper takes aggregation query as an example to discusses the curve query processing problem in WSNs, and proposes a sensed curve derivation algorithm and two sensed curve aggregation algorithms in WSNs. The theoretical analysis and extensive experiment results indicate that all the proposed algorithms have high performance in terms of accuracy and energy efficiency.
+
